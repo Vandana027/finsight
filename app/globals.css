@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@theme {
+  --color-brand: #0f3d2e;
+  --color-brand-dark: #0a2e22;
+  --color-brand-soft: #e8f1ec;
+  --color-sand: #f6f4ee;
+  --color-ink: #14231c;
+  --color-mute: #57534e;
+  --color-line: #e2ded1;
+  --color-gold: #a97a2c;
+  --font-sans: ui-sans-serif, "Segoe UI", "Helvetica Neue", Inter, Roboto, Arial, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--color-sand); color: var(--color-ink); font-family: var(--font-sans); font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 3px solid rgba(15,61,46,.35); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* FinSight product polish */
+::selection { background: rgba(15,61,46,.16); color: #14231c; }
+button, input, select { font: inherit; }
+input[type="search"]::-webkit-search-cancel-button { cursor: pointer; }
+@media (max-width: 640px) {
+  .recharts-responsive-container { min-width: 0 !important; }
+}
